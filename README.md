@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Kanban Board
+Kanban is a popular project management methodology that helps visualize work, maximize efficiency, and continuously improve processes. Using Kanban boards, teams can track tasks across different stages, such as To Do, In Progress, Done, and more. Each task is represented as a card that moves from one stage to another, providing a clear and immediate overview of the work status.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Advantages of Using Kanban:
 
-## Available Scripts
+- Visual Workflow: Allows teams to see all tasks and their current status at a glance.
+- Increased Efficiency: Enables better task prioritization and workload management, minimizing idle time.
+- Flexibility: Adapts easily to changes, accommodating new tasks or adjustments to ongoing ones.
+- Continuous Improvement: Promotes reflection on progress and process adjustments for better productivity.
+- Collaboration: Supports teamwork by making task ownership and status clear to everyone involved.
 
-In the project directory, you can run:
+### Features of Our Kanban Board App
+This Kanban board app is designed to offer a streamlined experience for managing and visualizing tasks. Key functionalities include:
 
-### `npm start`
+### Filter & Sort
+- Filter by Priority, Status, or User: Filter tasks based on different criteria for improved focus and clarity.
+- Sort by Priority or Title: Organize tasks by priority levels (No Priority, Low, Medium, High, Urgent) or alphabetically by title for better readability and prioritization.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Task Management
+- Add New Tasks: Quickly add new tasks to the board with ease.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Drag-and-Drop Functionality
+- Move Tasks Between Stages: Intuitively drag and drop tasks between stages (e.g., To Do, In Progress, Done) to reflect the current status of each task.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add Tasks: Create a new task and specify details like priority, status, and assigned user.
+- Filter Tasks: Use the filter option to view tasks by status, priority, or user for a focused view.
+- Sort Tasks: Sort tasks by priority level or title for efficient task organization.
+- Drag and Drop: Simply drag tasks between different stages to update their progress on the board.
