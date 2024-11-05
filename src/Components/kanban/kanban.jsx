@@ -40,7 +40,7 @@ const COLUMN_MAPPING = {
 
 // Main exported function
 const Kanban = () => {
-  const [tasks, setTasks] = useState([]);
+  const { tasks, setTasks } = useContext(ConContext);
   const [loading, setLoading] = useState(true);
   const [groupedTasks, setGroupedTasks] = useState({});
   const [error, setError] = useState(null);
@@ -85,7 +85,7 @@ const Kanban = () => {
     };
 
     fetchData();
-  }, []);
+  }, [setTasks]);
 
   useEffect(() => {
     const updatedGroupedTasks = groupAndSortTasks(
@@ -97,7 +97,7 @@ const Kanban = () => {
   }, [tasks, filter, sort]); // Re-run the function when these dependencies change
 
   const userImages = {};
-
+  console.log(tasks);
   tasks.forEach((task) => {
     if (!userImages[task.userId]) {
       userImages[task.userId] = generateUserImages(task.userId);
@@ -144,9 +144,6 @@ const Kanban = () => {
 // Grp and sort tasks
 const groupAndSortTasks = (tasks, groupBy, sortBy) => {
   if (!Array.isArray(tasks) || !groupBy) return {};
-
-  console.log(sortBy);
-
   // Grp tasks
   const grouped = tasks.reduce((grouped, task) => {
     const key = task[groupBy];
@@ -174,7 +171,6 @@ const groupAndSortTasks = (tasks, groupBy, sortBy) => {
       return 0; // Default
     });
   });
-  console.log(grouped);
   return grouped;
 };
 
