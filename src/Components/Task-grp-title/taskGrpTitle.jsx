@@ -26,8 +26,8 @@ const TaskGrpTitle = ({ key, label, icon, groupedTasks, setGroupedTasks }) => {
           {label}
           &nbsp;&nbsp;&nbsp;
           <p style={{ color: "grey" }}>
-            {groupedTasks[key] && groupedTasks[key].length > 0
-              ? groupedTasks[key].length
+            {groupedTasks[label] && groupedTasks[label].length > 0
+              ? groupedTasks[label].length
               : 0}
           </p>
         </div>

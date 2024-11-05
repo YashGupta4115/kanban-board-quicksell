@@ -33,7 +33,7 @@ const Card = ({ task, columnMapping, userImages }) => {
       <div className="taskTitle">
         {(filter === "priority" || filter === "userId") && statusImage && (
           <img
-            className="footer-icons"
+            className="title-icons"
             src={statusImage}
             alt={`Status: ${status}`}
           />
@@ -49,8 +49,22 @@ const Card = ({ task, columnMapping, userImages }) => {
               alt={`Priority: ${priority}`}
             />
           )}
-          <GoDotFill style={{ color: "rgb(174, 171, 171)" }} />
-          <div className="cardTag">{tag}</div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              boxShadow: "0 0 1px 0",
+              padding: "2px",
+              borderRadius: "2px",
+              marginLeft: "5px",
+              color: "grey",
+            }}
+          >
+            <GoDotFill
+              style={{ color: "rgb(174, 171, 171)", paddingTop: "2px" }}
+            />
+            <div className="cardTag">{tag}</div>
+          </div>
         </div>
       </div>
     </div>

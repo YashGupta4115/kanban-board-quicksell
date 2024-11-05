@@ -41,10 +41,15 @@
     object-fit: cover;
     border-radius: 50%;
 }
-
+.title-icons{
+margin-right: 5px;
+    margin-top: 2.5px;
+}
 .footer-icons{
-        margin-right: 5px;
-            margin-top: 2.5px;
+    box-shadow: 0 0 1px 0;
+    padding: 2px;
+        border-radius: 2px;
+        color : grey
 }
 
 .camName, .cardTag{
