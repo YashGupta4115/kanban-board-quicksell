@@ -39,7 +39,7 @@ export const statusList = [
   },{
     label : "Todo"
   },{
-    label : "In Progress" 
+    label : "In progress" 
   },{
     label : "Done"
   },{
